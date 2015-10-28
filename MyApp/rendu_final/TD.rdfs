@@ -1,0 +1,241 @@
+<?xml version="1.0"?>
+<!DOCTYPE rdf:RDF [
+   <!ENTITY xsd      "http://www.w3.org/2001/XMLSchema#"> 
+   <!ENTITY foaf     "http://xmlns.com/foaf/0.1/">
+]>
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://www.w3.org/2000/01/rdf-schema#" >
+  
+<rdfs:Class rdf:ID="CV">
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="CVPart">
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="Contact">
+   <rdfs:subClassOf rdf:resource="#CVPart"/>
+   <rdfs:label>Contact</rdfs:label>
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="Formation">
+   <rdfs:subClassOf rdf:resource="#CVPart"/>
+   <rdfs:label>Formation</rdfs:label>
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="Experience">
+   <rdfs:subClassOf rdf:resource="#CVPart"/>
+   <rdfs:label>Experience</rdfs:label>
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="SoftwareProject">
+	<rdfs:label>Software Project</rdfs:label>
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="Hobbies">
+	<rdfs:label>Hobbies</rdfs:label>
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="ContentCV">
+   <rdfs:label>Contenu</rdfs:label>
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="Building">
+   <rdfs:label>Building</rdfs:label>
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="Language">
+   <rdfs:label>Langage</rdfs:label>
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="Language">
+   <rdfs:label>Language</rdfs:label>
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="OS">
+   <rdfs:label>OS</rdfs:label>
+   <rdfs:comment>Système d'exploitation</rdfs:comment>
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="Sport">
+   <rdfs:label>Sport</rdfs:label>
+   <rdfs:comment>Classe sport</rdfs:comment>
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="City">
+   <rdfs:label>City</rdfs:label>
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="Filiere">
+   <rdfs:label>Filiere</rdfs:label>
+   <rdfs:comment>Orientation générale, informatique, electronique...</rdfs:comment>
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="Speciality">
+   <rdfs:label>Speciality</rdfs:label>
+   <rdfs:comment> </rdfs:comment>
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="Country">
+   <rdfs:label xml:lang='fr'>Pays</rdfs:label>
+   <rdfs:label xml:lang='en'>Country</rdfs:label>
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="FormationContent">
+   <rdfs:subClassOf rdf:resource="#ContentCV"/>
+   <rdfs:label xml:lang='fr'>Ceci est le contenu d'une formation</rdfs:label>
+    <rdfs:label xml:lang='en'>This is the formation content</rdfs:label>
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="ContactContent">
+   <rdfs:subClassOf rdf:resource="#ContentCV"/>
+   <rdfs:label xml:lang='fr'>Ceci est le contenu de la partie contact</rdfs:label>
+	<rdfs:label xml:lang='en'>This is the content of contact</rdfs:label>
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="ExperienceContent">   
+   <rdfs:subClassOf rdf:resource="#ContentCV"/>
+   <rdfs:label xml:lang='fr'>Ceci est le contenu de l'expérience</rdfs:label>
+   <rdfs:label xml:lang='en'>This is the experience content</rdfs:label>
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="CompetencesContent">
+   <rdfs:subClassOf rdf:resource="#ContentCV"/>
+   <rdfs:label>Contenu des compétences</rdfs:label>
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="HobbiesContent">
+   <rdfs:subClassOf rdf:resource="#ContentCV"/>
+   <rdfs:label>Contenu des passions</rdfs:label>
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="Part">
+</rdfs:Class>
+
+
+
+<rdf:Property rdf:ID="hasCV">
+  <rdfs:domain rdf:resource="&foaf;Personne"/>
+  <rdfs:range rdf:resource="#CV"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="hasContact">
+  <rdfs:domain rdf:resource="#Personne"/>
+  <rdfs:range rdf:resource="#Contact"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="developped">
+  <rdfs:domain rdf:resource="#Personne"/>
+  <rdfs:range rdf:resource="#SoftwareProject"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="formation">
+  <rdfs:domain rdf:resource="#Personne"/>
+  <rdfs:range rdf:resource="#FormationContent"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="hobbies">
+  <rdfs:domain rdf:resource="#Personne"/>
+  <rdfs:range rdf:resource="#Hobbies"/>
+</rdf:Property>
+
+
+<rdf:Property rdf:ID="onePart">
+  <rdfs:domain rdf:resource="#CV"/>
+  <rdfs:range rdf:resource="#CVPart"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="contains">
+  <rdfs:domain rdf:resource="#CVPart"/>
+  <rdfs:range rdf:resource="#ContentCV"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="hasBuilding">
+  <rdfs:domain rdf:resource="#Formation"/>
+  <rdfs:range rdf:resource="#Building"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="hasFiliere">
+  <rdfs:domain rdf:resource="#Formation"/>
+  <rdfs:range rdf:resource="#Filiere"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="hasSpeciality">
+  <rdfs:domain rdf:resource="#Formation"/>
+  <rdfs:range rdf:resource="#Speciality"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="hasItem">
+  <rdfs:domain rdf:resource="#FormationContent"/>
+  <rdfs:domain rdf:resource="#ExperienceContent"/>
+  <rdfs:range rdf:resource="#Experience"/>
+  <rdfs:range rdf:resource="#Formation"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="called">
+  <rdfs:domain rdf:resource="#Part"/>
+  <rdfs:domain rdf:resource="#Formation"/>
+  <rdfs:domain rdf:resource="#OS"/>
+  <rdfs:domain rdf:resource="#Language"/>
+  <rdfs:domain rdf:resource="#Language"/>
+  <rdfs:domain rdf:resource="#City"/>
+  <rdfs:domain rdf:resource="#Hobbies"/>
+  <rdfs:domain rdf:resource="#Country"/>
+  <rdfs:domain rdf:resource="#Speciality"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="onePart">
+  <rdfs:domain rdf:resource="#CV"/>
+  <rdfs:range rdf:resource="#Part"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="date-start">
+  <rdfs:domain rdf:resource="#Formation"/>
+  <rdfs:domain rdf:resource="#Experience"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="date-ends">
+  <rdfs:domain rdf:resource="#Formation"/>
+  <rdfs:domain rdf:resource="#Experience"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="place">
+  <rdfs:domain rdf:resource="#Experience"/>
+  <rdfs:range rdf:resource="#City"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="hasCountry">
+  <rdfs:domain rdf:resource="#City"/>
+  <rdfs:range rdf:resource="#Country"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="hasOS">
+  <rdfs:domain rdf:resource="#CompetencesContent"/>
+  <rdfs:range rdf:resource="#OS"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="hasLanguage">
+  <rdfs:domain rdf:resource="#CompetencesContent"/>
+  <rdfs:range rdf:resource="#Language"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="ProgrammationWeb">
+  <rdfs:domain rdf:resource="#CompetencesContent"/>
+  <rdfs:range rdf:resource="#Language"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="ProgrammationDev">
+  <rdfs:domain rdf:resource="#CompetencesContent"/>
+  <rdfs:range rdf:resource="#Language"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="hasHobbies">
+  <rdfs:domain rdf:resource="#CompetencesContent"/>
+  <rdfs:range rdf:resource="#Hobbies"/>
+</rdf:Property>
+
+</rdf:RDF>

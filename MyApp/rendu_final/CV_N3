@@ -1,0 +1,313 @@
+@prefix base: <http://www.TP1WebDonnees.fr/> .
+@prefix dc: <http://TD.rdfs/> .
+@prefix doac: <http://lironesamoun.fr/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lang: <http://purl.org/net/inkel/rdf/schemas/lang/1.1#> .
+@prefix po: <http://www.polytechnice.fr/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<#Geneviève> a foaf:Person ;
+    dc:formation <#FormationContentCVGenevieve> ;
+    dc:hasCV <#CVGenevieve> ;
+    dc:hasCoordonnee <#CoordonneesCVGenevieve> ;
+    dc:teached <#CoursADomicileGenevieve> ;
+    foaf:Adresse _:N5ba45ca4c14d4f22b848be40c404fc63 ;
+    foaf:Age _:N2eddff8088b84e57a8fc0a360beddbd9 .
+
+<#LironeSamoun> a foaf:Person ;
+    dc:formation <#FormationContentCVLirone> ;
+    dc:hasCV <#CVLirone> ;
+    dc:hasCoordonnee <#CoordonneesCVLirone> ;
+    dc:teached <#CoursADomicileLirone> ;
+    foaf:Adresse _:N33d1eb2b835d4d52a350a78dcd0a2749 ;
+    foaf:Age _:N2eddff8088b84e57a8fc0a360beddbd9 .
+
+<CompetencesContentCVGenevieve> a <#ContentCV> ;
+    dc:ProgrammationDev <#C++>,
+        <#Java>,
+        <#MatLab> ;
+    dc:ProgrammationWeb <#CSS>,
+        <#HTML>,
+        <#JavaScript> ;
+    dc:hasLangue <#Anglais>,
+        <#Espagnol> ;
+    dc:hasOS <#linux>,
+        <#windows> .
+
+<#Annee3Annee4ingenieurGenevieve> a <Formation> ;
+    dc:date-ends """
+               2014-06-24
+            """^^xsd:date;
+    dc:date-start """
+               2012-06-23
+            """^^xsd:date;
+    dc:hasFiliere <#SI> .
+
+<#Annee3Annee4ingenieurLirone> a <Formation> ;
+    dc:date-ends """
+              	 2014-06-24
+            	"""^^xsd:date;
+    dc:date-start """
+               2012-06-23
+            	"""^^xsd:date;
+    dc:hasEtablissement <#Polytech> ;
+    dc:hasFiliere <#MAM> ;
+    dc:hasName "Cycle Ingénieur"^^xsd:string .
+
+<#Annee5ingenieurGenevieve> a <Formation> ;
+    dc:date-ends """
+               2015-06-24
+            """^^xsd:date;
+    dc:date-start """
+               2014-06-23
+            """^^xsd:date;
+    dc:etablissement <Polytech> ;
+    dc:hasFiliere <#SI> ;
+    dc:hasName "Cycle Ingénieur"^^xsd:string ;
+    dc:hasOption <#WEB> .
+
+<#Annee5ingenieurLirone> a <Formation> ;
+    dc:date-ends "2015-06-24"^^xsd:date ;
+    dc:date-starts "2014-06-23"^^xsd:date ;
+    dc:hasEtablissement <#Polytech> ;
+    dc:hasFilliere <#MAM> ;
+    dc:hasName "Cycle Ingénieur"^^xsd:string .
+
+<#CVGenevieve> a <#CV> ;
+    dc:hasPart <#CompetencesCVGenevieve>,
+        <#CoordonneesCVGenevieve>,
+        <#ExperienceCVGenevieve>,
+        <#FormationCVGenevieve> .
+
+<#CVLirone> a <CV> ;
+    dc:hasPart <#CompetencesCVLirone>,
+        <#CoordonneesCVLirone>,
+        <#ExperienceCVLirone>,
+        <#FormationCVLirone> .
+
+<#CompetencesCVGenevieve> a <#PartCV> ;
+    dc:hasContent <#CompetencesContentCVGenevieve> ;
+    dc:hasName """Competences
+               """^^xsd:string.
+
+<#CompetencesCVLirone> a <PartCV> ;
+    dc:hasContent <#CompetencesContentCVLirone> ;
+    dc:hasName """Competences
+				   """^^xsd:string.
+
+<#CompetencesContentCVLirone> a <ContentCV> ;
+    dc:ProgrammationDev <#C++>,
+        <#Java>,
+        <#MatLab> ;
+    dc:ProgrammationWeb <#CSS>,
+        <#HTML>,
+        <#JavaScript> ;
+    dc:hasLangue <#Anglais>,
+        <#Espagnol> ;
+    dc:hasOS <#linux>,
+        <#windows> .
+
+<#CoordonneesContentCVGenevieve> a <#ContentCV> ;
+    foaf:Adresse _:N5ba45ca4c14d4f22b848be40c404fc63 ;
+    foaf:Age _:N2eddff8088b84e57a8fc0a360beddbd9 ;
+    foaf:Name """Coordonnées
+      """^^xsd:string;
+    foaf:dateOfBirth "1992-02-19" ;
+    foaf:family_name "CIRERA" ;
+    foaf:gender "Female"^^xsd:string ;
+    foaf:givenname "Genevieve" ;
+    foaf:mbox <genevieve.cirera@gmail.com> ;
+    foaf:phone 600000000 .
+
+<#CoordonneesContentCVLirone> a <ContentCV> ;
+    foaf:adresse _:N33d1eb2b835d4d52a350a78dcd0a2749 ;
+    foaf:age _:N2eddff8088b84e57a8fc0a360beddbd9 ;
+    foaf:dateOfBirth "1992-10-25" ;
+    foaf:family_name "SAMOUN" ;
+    foaf:gender "male"^^xsd:string ;
+    foaf:givenname "Lirone" ;
+    foaf:homepage <http://lironesamoun.fr> ;
+    foaf:mbox <lirone.samoun@gmail.com> ;
+    foaf:name "Coordonnées"^^xsd:string ;
+    foaf:phone 33675769816 ;
+    foaf:weblog <http://revolutionpositive.fr> .
+
+<#ESILV> a <Etablissement> .
+
+<#Espagne> a <Pays> .
+
+<#ExperienceCVGenevieve> a <#PartCV> ;
+    dc:hasContent <#ExperienceContentCVGenevieve> ;
+    dc:hasName """Experience
+               """^^xsd:string.
+
+<#ExperienceCVLirone> a <PartCV> ;
+    dc:hasContent <#ExperienceContentCVLirone> ;
+    dc:hasName """Experience
+               """^^xsd:string,"""Experiences
+               """^^xsd:string.
+
+<#ExperienceContentCVGenevieve> a <#ContentCV> ;
+    dc:hasItem <#CoursADomicileGenevieve> .
+
+<#ExperienceContentCVLirone> a <ContentCV> ;
+    dc:hasItem <#CoursADomicileLirone>,
+        <#Stage> .
+
+<#FormationCVGenevieve> a <#PartCV> ;
+    dc:hasContent <#FormationContentCVGenevieve> ;
+    dc:hasName """Formation
+               """^^xsd:string.
+
+<#FormationCVLirone> a <PartCV> ;
+    dc:hasContent <#FormationContentCVLirone> ;
+    dc:hasName """Formation
+				   """^^xsd:string.
+
+<#Madrid> a <Ville> ;
+    dc:hasPays <#Espagne> .
+
+<#Paris> a <Ville> ;
+    dc:hasPays <#France> .
+
+<#Prepa> a <Formation> ;
+    dc:date-ends """
+               2012-06-24
+            """^^xsd:date;
+    dc:date-start """
+               2010-06-23
+            """^^xsd:date;
+    dc:hasEtablissement <#ESILV> .
+
+<#Stage> a <Experience> ;
+    dc:date-ends """
+               2014-09-08
+            """^^xsd:string;
+    dc:date-start """
+               2014-06-25
+            """^^xsd:string;
+    dc:lieu <#Madrid> .
+
+<#Valbonne> a <Ville> ;
+    dc:hasName """Valbonne
+         """^^xsd:string;
+    dc:hasPays <#France> .
+
+<#cip> a <Formation> ;
+    dc:date-ends "2012-06-30"^^xsd:string ;
+    dc:date-starts "2010-09-01"^^xsd:string ;
+    dc:hasEtablissement <#Polytech> .
+
+<http://lironesamoun.fr> dc:title "Page de photographies" .
+
+<http://revolutionpositive.fr> dc:title "Blog Développement personnel" .
+
+<#Anglais> a <Langue> ;
+    dc:hasName "Anglais"^^xsd:string .
+
+<#Antibes> a <Ville> ;
+    dc:Pays <#France> ;
+    dc:hasName """
+							Antibes
+						"""^^xsd:string;
+    dc:hasPays <#France> .
+
+<#C++> a <Language> ;
+    dc:hasName "C++"^^xsd:string .
+
+<#CSS> a <Language> ;
+    dc:hasName "CSS"^^xsd:string .
+
+<#CoordonneesCVGenevieve> a <#PartCV> ;
+    dc:hasContent <#CoordonneesContentCVGenevieve> ;
+    dc:hasName """Coordonnees
+               """^^xsd:string.
+
+<#CoordonneesCVLirone> a <PartCV> ;
+    dc:hasContent <#CoordonneesContentCVLirone> ;
+    dc:hasName """Coordonnees
+				   """^^xsd:string.
+
+<#CoursADomicileGenevieve> a <Experience> ;
+    dc:date-ends """
+               2012-06-24
+            """^^xsd:string;
+    dc:date-start """
+               2010-06-23
+            """^^xsd:string;
+    dc:lieu <#Paris> ;
+    dc:niveau <#College>,
+        <#Lycée> .
+
+<#CoursADomicileLirone> a <Experience> ;
+    dc:date-ends """
+               2014-06-24
+            """^^xsd:string;
+    dc:date-start """
+               2010-06-23
+            """^^xsd:string;
+    dc:lieu <#Antibes> ;
+    dc:niveau <#College>,
+        <#Lycée> .
+
+<#Espagnol> a <Langue> ;
+    dc:hasName "Espagnol"^^xsd:string .
+
+<#FormationContentCVGenevieve> a <#ContentCV> ;
+    dc:hasItem <#Annee3Annee4ingenieurGenevieve>,
+        <#Annee5ingenieurGenevieve>,
+        <#Prepa> .
+
+<#FormationContentCVLirone> a <ContentCV> ;
+    dc:hasItem <#Annee3Annee4ingenieurLirone>,
+        <#Annee5ingenieurLirone>,
+        <#cip> .
+
+<#HTML> a <Language> ;
+    dc:hasName "HTML"^^xsd:string .
+
+<#Java> a <Language> ;
+    dc:hasName "Java"^^xsd:string .
+
+<#JavaScript> a <Language> ;
+    dc:hasName "JavaScript"^^xsd:string .
+
+<#MAM> dc:hasName """
+								Mathématique Appliquées et Modélisation
+							"""^^xsd:string;
+    dc:option <#GMD> .
+
+<#MatLab> a <Language> ;
+    dc:hasName "MatLab"^^xsd:string .
+
+<#linux> a <OS> ;
+    dc:hasName "Linux"^^xsd:string .
+
+<#windows> a <OS> ;
+    dc:hasName "Windows"^^xsd:string .
+
+<#France> a <Pays> ;
+    dc:hasName """
+									France
+								"""^^xsd:string,"""France
+               """^^xsd:string.
+
+_:N33d1eb2b835d4d52a350a78dcd0a2749 dc:CP 6600 ;
+    dc:Ville <#Antibes> ;
+    dc:numero 589 ;
+    dc:rue """ 
+					Chemins des hautes bréguières
+				"""^^xsd:string.
+
+_:N5ba45ca4c14d4f22b848be40c404fc63 dc:CP 6560 ;
+    dc:Ville <#Valbonne> ;
+    dc:numero 22 ;
+    dc:rue """
+         zefrerg
+      """^^xsd:string.
+
+_:N2eddff8088b84e57a8fc0a360beddbd9 dc:unit <#annee> ;
+    rdf:value 22 .

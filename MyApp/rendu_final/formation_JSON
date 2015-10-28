@@ -1,0 +1,254 @@
+{
+  "http://www.w3.org/2000/01/rdf-schema#INUM": {
+    "http://TD.rdfs/hasName": [
+      {
+        "datatype": "http://www.w3.org/2001/XMLSchema#string", 
+        "type": "literal", 
+        "value": "\n                           INUM\n                        "
+      }
+    ]
+  }, 
+  "http://www.w3.org/2000/01/rdf-schema#Polytech": {
+    "http://TD.rdfs/hasPhase": [
+      {
+        "type": "uri", 
+        "value": "http://www.w3.org/2000/01/rdf-schema#CycleIngenieur"
+      }, 
+      {
+        "type": "uri", 
+        "value": "http://www.w3.org/2000/01/rdf-schema#CyclePreparatoire"
+      }
+    ], 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "type": "uri", 
+        "value": "http://www.w3.org/2000/01/Etablissement"
+      }, 
+      {
+        "type": "uri", 
+        "value": "http://TD.rdfs/Ecole"
+      }
+    ]
+  }, 
+  "http://www.w3.org/2000/01/rdf-schema#IHM": {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "type": "uri", 
+        "value": "http://www.w3.org/2000/01/option"
+      }
+    ], 
+    "http://TD.rdfs/hasName": [
+      {
+        "datatype": "http://www.w3.org/2001/XMLSchema#string", 
+        "type": "literal", 
+        "value": "\n                           IHM\n                        "
+      }
+    ]
+  }, 
+  "http://www.w3.org/2000/01/rdf-schema#MAM": {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "type": "uri", 
+        "value": "http://www.w3.org/2000/01/Filiere"
+      }
+    ], 
+    "http://TD.rdfs/hasOption": [
+      {
+        "type": "uri", 
+        "value": "http://www.w3.org/2000/01/rdf-schema#IMAFA"
+      }, 
+      {
+        "type": "uri", 
+        "value": "http://www.w3.org/2000/01/rdf-schema#GMD"
+      }, 
+      {
+        "type": "uri", 
+        "value": "http://www.w3.org/2000/01/rdf-schema#INUM"
+      }
+    ], 
+    "http://TD.rdfs/hasName": [
+      {
+        "datatype": "http://www.w3.org/2001/XMLSchema#string", 
+        "type": "literal", 
+        "value": "\n                        MAM\n                     "
+      }
+    ]
+  }, 
+  "http://www.w3.org/2000/01/rdf-schema#AL": {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "type": "uri", 
+        "value": "http://www.w3.org/2000/01/option"
+      }
+    ], 
+    "http://TD.rdfs/hasName": [
+      {
+        "datatype": "http://www.w3.org/2001/XMLSchema#string", 
+        "type": "literal", 
+        "value": "\n                           AL\n                        "
+      }
+    ]
+  }, 
+  "http://www.w3.org/2000/01/rdf-schema#SI": {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "type": "uri", 
+        "value": "http://www.w3.org/2000/01/Filiere"
+      }
+    ], 
+    "http://TD.rdfs/hasSpeciality": [
+      {
+        "type": "uri", 
+        "value": "http://www.w3.org/2000/01/rdf-schema#WEB"
+      }, 
+      {
+        "type": "uri", 
+        "value": "http://www.w3.org/2000/01/rdf-schema#AL"
+      }, 
+      {
+        "type": "uri", 
+        "value": "http://www.w3.org/2000/01/rdf-schema#IAM"
+      }, 
+      {
+        "type": "uri", 
+        "value": "http://www.w3.org/2000/01/rdf-schema#CASPAR"
+      }, 
+      {
+        "type": "uri", 
+        "value": "http://www.w3.org/2000/01/rdf-schema#IMAFA"
+      }, 
+      {
+        "type": "uri", 
+        "value": "http://www.w3.org/2000/01/rdf-schema#GMD"
+      }, 
+      {
+        "type": "uri", 
+        "value": "http://www.w3.org/2000/01/rdf-schema#IHM"
+      }
+    ], 
+    "http://TD.rdfs/called": [
+      {
+        "datatype": "http://www.w3.org/2001/XMLSchema#string", 
+        "type": "literal", 
+        "value": "\n                     SI\n                  "
+      }
+    ]
+  }, 
+  "http://www.w3.org/2000/01/rdf-schema#GMD": {
+    "http://TD.rdfs/name": [
+      {
+        "datatype": "http://www.w3.org/2001/XMLSchema#string", 
+        "type": "literal", 
+        "value": "\n         GMD\n      "
+      }
+    ], 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "type": "uri", 
+        "value": "http://www.w3.org/2000/01/option"
+      }
+    ]
+  }, 
+  "http://www.w3.org/2000/01/rdf-schema#CycleIngenieur": {
+    "http://TD.rdfs/hasFiliere": [
+      {
+        "type": "uri", 
+        "value": "http://www.w3.org/2000/01/rdf-schema#MAM"
+      }, 
+      {
+        "type": "uri", 
+        "value": "http://www.w3.org/2000/01/rdf-schema#SI"
+      }
+    ], 
+    "http://TD.rdfs/called": [
+      {
+        "datatype": "http://www.w3.org/2001/XMLSchema#string", 
+        "type": "literal", 
+        "value": "\n               Cycle Ingénieur\n            "
+      }
+    ], 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "type": "uri", 
+        "value": "http://www.w3.org/2000/01/phase"
+      }
+    ]
+  }, 
+  "http://www.w3.org/2000/01/rdf-schema#WEB": {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "type": "uri", 
+        "value": "http://www.w3.org/2000/01/option"
+      }
+    ], 
+    "http://TD.rdfs/hasName": [
+      {
+        "datatype": "http://www.w3.org/2001/XMLSchema#string", 
+        "type": "literal", 
+        "value": "\n                           WEB\n                        "
+      }
+    ]
+  }, 
+  "http://www.w3.org/2000/01/rdf-schema#IMAFA": {
+    "http://TD.rdfs/name": [
+      {
+        "datatype": "http://www.w3.org/2001/XMLSchema#string", 
+        "type": "literal", 
+        "value": "\n         IMAFA\n      "
+      }
+    ], 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "type": "uri", 
+        "value": "http://www.w3.org/2000/01/option"
+      }
+    ]
+  }, 
+  "http://www.w3.org/2000/01/rdf-schema#CASPAR": {
+    "http://TD.rdfs/hasName": [
+      {
+        "datatype": "http://www.w3.org/2001/XMLSchema#string", 
+        "type": "literal", 
+        "value": "\n                           CASPAR\n                        "
+      }
+    ], 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "type": "uri", 
+        "value": "http://www.w3.org/2000/01/option"
+      }
+    ]
+  }, 
+  "http://www.w3.org/2000/01/rdf-schema#CyclePreparatoire": {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "type": "uri", 
+        "value": "http://www.w3.org/2000/01/phase"
+      }
+    ], 
+    "http://TD.rdfs/hasName": [
+      {
+        "datatype": "http://www.w3.org/2001/XMLSchema#string", 
+        "type": "literal", 
+        "value": "\n               Cycle Preparatoire\n            "
+      }
+    ]
+  }, 
+  "http://www.w3.org/2000/01/rdf-schema#IAM": {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "type": "uri", 
+        "value": "http://www.w3.org/2000/01/option"
+      }
+    ], 
+    "http://TD.rdfs/hasName": [
+      {
+        "datatype": "http://www.w3.org/2001/XMLSchema#string", 
+        "type": "literal", 
+        "value": "\n                           IAM\n                        "
+      }
+    ]
+  }
+}
+
+
