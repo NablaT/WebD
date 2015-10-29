@@ -258,12 +258,12 @@
    
      <rdf:Description rdf:about="#SkillsContentCVRemi">
       <rdf:type rdf:resource="ContentCV"/>
-	  <dc:hasOS>
+	  <dc:hasSkill>
          <rdf:Description rdf:about="#projectManagement" />
-      </dc:hasOS>
-      <dc:hasOS>
+      </dc:hasSkill>
+      <dc:hasSkill>
          <rdf:Description rdf:about="#windows" />
-      </dc:hasOS>  
+      </dc:hasSkill>  
       	  <dc:hasLanguage>
             <rdf:Description rdf:about="#Francais" />
       </dc:hasLanguage> 
@@ -482,12 +482,12 @@
    
    <rdf:Description rdf:about="#SkillsContentCVJeanPhilippe">
       <rdf:type rdf:resource="#ContentCV"/>
-      <dc:hasOS>
+      <dc:hasSkill>
          <rdf:Description rdf:about="#projectManagement" />
-      </dc:hasOS>
-      <dc:hasOS>
+      </dc:hasSkill>
+      <dc:hasSkill>
          <rdf:Description rdf:about="#windows" />
-      </dc:hasOS>  
+      </dc:hasSkill>  
       	  <dc:hasLanguage>
             <rdf:Description rdf:about="#Francais" />
       </dc:hasLanguage> 

@@ -53,9 +53,9 @@
    <rdfs:label>Language</rdfs:label>
 </rdfs:Class>
 
-<rdfs:Class rdf:ID="OS">
-   <rdfs:label>OS</rdfs:label>
-   <rdfs:comment>Système d'exploitation</rdfs:comment>
+<rdfs:Class rdf:ID="Skill">
+   <rdfs:label>Skill</rdfs:label>
+   <rdfs:comment>Skills</rdfs:comment>
 </rdfs:Class>
 
 <rdfs:Class rdf:ID="Sport">
@@ -176,7 +176,7 @@
 <rdf:Property rdf:ID="called">
   <rdfs:domain rdf:resource="#Part"/>
   <rdfs:domain rdf:resource="#Formation"/>
-  <rdfs:domain rdf:resource="#OS"/>
+  <rdfs:domain rdf:resource="#Skill"/>
   <rdfs:domain rdf:resource="#Language"/>
   <rdfs:domain rdf:resource="#Language"/>
   <rdfs:domain rdf:resource="#City"/>
@@ -213,9 +213,9 @@
   <rdfs:range rdf:resource="#Country"/>
 </rdf:Property>
 
-<rdf:Property rdf:ID="hasOS">
+<rdf:Property rdf:ID="hasSkill">
   <rdfs:domain rdf:resource="#CompetencesContent"/>
-  <rdfs:range rdf:resource="#OS"/>
+  <rdfs:range rdf:resource="#Skill"/>
 </rdf:Property>
 
 <rdf:Property rdf:ID="hasLanguage">
