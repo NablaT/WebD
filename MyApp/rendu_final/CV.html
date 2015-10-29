@@ -1,186 +1,198 @@
-<!DOCTYPE html>
 <html version="HTML+RDFa 1.1" lang="en"
-xmlns="http://www.w3.org/1999/xhtml"
 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-xmlns:cc="http://creativecommons.org/ns#"
-xmlns:dc="http://purl.org/dc/elements/1.1/"
-xmlns:tp="http://TP1.webdonne.fr/"
-xmlns:ls="http://lironesamoun/ls/"
-xmlns:foaf="http://xmlns.com/foaf/0.1/"
-xmlns:base="http://www.w3.org/2000/01/rdf-schema#">
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:dc="http://dublincore.org/documents/2012/06/14/dcmi-terms/?v=elements"
+	xmlns:xsd ="&xsd;"
+	xmlns:our="http://ourtpcollection.fr/our"
+	xmlns:base="http://www.td1webdedonnees.fr/"
+	xmlns:sch="https://schema.org/School"
+	xmlns:soft="https://schema.org/WebApplication"
+	xmlns:bus="https://schema.org/LocalBusiness"
+	xmlns:date="https://schema.org/Date"
+	xmlns:pers="https://schema.org/Person">
+<meta charset="utf-8" >
+<link rel="stylesheet" href="styles.css" type="text/css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    
+<head>
+	<title property="dc:title"> CV </title>
+</head>
+<body  typeof="foaf:PersonalProfileDocument">
+<h2  typeOf="foaf:Person" property="foaf:name" > Rémi Pourtier </h2>
+<div about="ls#Remi" id="wrapper">
+    <ul class="menu">
+        <li class="item1"> <a id="formation" href="#" typeOf="our:Formation"> Formation</a>
+			<ul>
+				<li class="subitem1" property="sch:legalName" ><a href="#" typeOf="our:School">
+				<div class="name" >
+					<span property="sch:legalName"> Polytech Nice </span><br/>
+				</div>
+				<div class="department" >
+					Department:<span property="sch:department">  Computer Sciences </span><br/>
+				</div>
+				<div class="formation" >
+					Formation:<span property="our:formation" >  3rd and 5th year of engineering school in software development </span><br/>
+				</div>
+				<div class="schooladress" > 
+					School address:<span property="sch:address">  930 Route des Colles, 06410 Biot, France</span>
+				</div>
+				</a></li>
+				<li class="subitem1"><a href="#" typeOf="our:School" >
+				<div class="name" >
+					<span property="sch:legalName"> Universidad Politecnica de Madrid</span> <br/>
+				</div>
+				<div class="department" >
+					Department: <span property="sch:department"> Computer Sciences</span> <br/>
+				</div>
+				<div class="formation" >
+					Formation:<span property="our:formation">  First year of master degree in software development</span> <br/>
+				</div>
+				<div class="schooladress" > 
+					School address: <span property="sch:address"> Calle Ramiro de Maeztu, 7, 28040 Madrid, Espagne </span>
+				</div>
+				</a></li>
+                <li class="subitem1">
+				<a href="#" typeOf="our:School" >
+				<div class="name" >
+					<span property="sch:legalName"> Polytech Annecy</span> <br/>
+				</div>
+				<div class="department" >
+					Department: <span property="sch:department"> General sciences </span><br/>
+				</div>
+				<div class="formation" >
+					Formation: <span property="our:formation"> 1st and 2nd year of engineering school in general sciences</span> <br/>
+				</div>
+				<div class="schooladress" > 
+					School address: <span property="sch:address"> 74944 Annecy Le Vieux, France</span>
+				</div>
+				</a></li>
+			</ul>
+		</li>
+	</ul>
+	<ul class="menu">
+		<li class="item1"><a href="#"> Experience</a>
+			<ul>
+				<li class="subitem2"><a href="#" typeOf="our:Experience" >
+				<div class="businessname" >
+					<span property="bus:legalName"> Sorexto </span><br/>
+				</div>
+				<div class="goal" >
+					 Goal: <span >Software development in the production process </span><br/>
+				</div>
+				<div class="datestart" property="bus:description">
+					Date Start: <span property="date:startDate">08/06/2015</span><br/>
+				</div>
+				<div class="endstart" >
+					 Date End: <span property="date:endDate">24/08/2015</span><br/>
+				</div>
+				<div class="businessaddress" > 
+					 Company address: <span property="bus:address">Nizeray, 38510 Saint-Victor-de-Morestel, France</span>
+				</div>
+				</a></li>
+                <li class="subitem2"><a href="#" typeOf="our:Experience" >
+				<div class="businessname" >
+					<span property="bus:legalName"> Amadeus </span><br/>
+				</div>
+				<div class="goal" >
+					Goal: <span property="bus:description"> Software development in the metrics department </span><br/>
+				</div>
+				<div class="datestart" >
+					Date Start: <span property="date:startDate" > 01/09/2015</span><br/>
+				</div>
+				<div class="endstart">
+					Date End:<span property="date:endDate"> 30/09/2016</span><br/>
+				</div>
+				<div class="businessaddress" > 
+					Company address: <span property="bus:address">  Route du Pin Montard, 
+					06560 Sophia Antipolis, France </span>
+				</div>
+				</a>
+				</a></li>
+			</ul>
+		</li>
+	</ul>
+	<ul class="menu">
+		<li class="item1"><a href="#"> Contact </a>
+			<ul>
+				<li class="subitem3"><a href="#" typeOf="our:Contact" >
+				<div class="birthdate" >
+					Birth Date: <span property="pers:birthDate">11/08/1993 </span><br/>
+				</div>
+				<div class="email" >
+					Email address: <span property="pers:email"> remi.pourtier@gmail.com </span> <br/>
+				</div>
+				<div class="gender" >
+					Gender: <span property="pers:gender"> Man </span><br/>
+				</div>
+				<div class="nationality" >
+					Nationality: <span property="pers:nationality">French</span><br/>
+				</div>
+				<div class="address"> 
+					Address: <span  property="pers:address">68 allee des Asphodeles 83700 Saint Raphael, France</span>
+				</div>
+				</a></li>
+			</ul>
+		</li>
+	</ul>
+	<ul class="menu">
+		<li class="item1"><a href="#"> Skills </a>
+			<ul>
+				<li class="subitem3"><a href="#" typeOf="our:Skills" >
+				<div class="skills" >
+					Web: <span property="our:hasSkills"> React </span><br/>
+				</div>
+				<div class="skills" >
+					Web: <span property="our:hasSkills"> Bootstrap </span><br/>
+				</div>
+				<div class="skills" >
+					Dev: <span property="our:hasSkills"> Java </span><br/>
+				</div>
+				<div class="skills" >
+					Dev: <span property="our:hasSkills"> Python </span><br/>
+				</div>
+				</a></li>
+			</ul>
+		</li>
+	</ul>
+	<ul class="menu">
+		<li class="item1"><a href="#"> Hobbies</a>
+			<ul>
+				<li class="subitem4"><a href="#" typeOf="our:Hobbies" >
+				<div class="sport" >
+					<span property="our:called"> Bike </span><br/>
+				</div>
+				</a></li>
+                <li class="subitem4"><a href="#" typeOf="our:Hobbies" >
+				<div class="sport" >
+					<span property="our:called"> Rugby </span><br/>
+				</div>
+				</a></li>
+			</ul>
+		</li>
+	</ul>
+</div>
 
-
- <head>
- 	<meta charset="utf-8" />
- 	 <link rel="stylesheet" href="css/style.css" />
- 	<title property="dc:title">CV Lirone Samoun</title>
-
- </head>
-
-<body about="" typeof="foaf:PersonalProfileDocument" rel="foafPrimaryTopic" >
-
-	<div about="ls:#me" typeof="foaf:Person">
-		
-		 <a property="image" href="lirone.jpg">
-		 <h1>Lirone Samoun</h1></a>
-
-	
-		 	<h2>Coordonnées</h2>
-		 	 <div id="coord" rel="ls:coordonnee">
-		 	 	<div typeof="ls:Coordonnee">
-			 		<adress>E-mail: <a rel="foaf:mbox" property="foaf:mbox_sha1sum" href="mailto:samoun@polytech.unice.fr">samoun@polytech.unice.fr</a></adress>
-			 		<p>Date de naissance:<span property="foaf:dateOfBirth">1992-10-25</span></p>
-			 		<p>Page Perso: <a ref="foaf:homepage" href="http://lironesamoun.fr">
-			 			<span property="dc:title">WebSite photos </span>
-			 		</a>
-			 		</p>
-			 		<p>Téléphone: <span property="foaf:phone" >067576****</span>  </p>
-			 		<p property="ls:summary"> Recherche un stage de 6 mois à l'étranger </p>
-			 	</div>
-		 </div>
-
-		
-		 	<h2>Formation</h2>
-			 	<div id="formation" rel="ls:formation" >
-			 		<div typeof="ls:Formation">
-				 		<h3> 
-				 			<span property="ls:title" datatype>
-				 				<span property="ls:level">Cycle ingénieur : </span> 
-				 				<a rel="polytechWebFormation" href="formation.html"><span property="ls:filiere">MAM5</span></a>
-				 				<span property="ls:option">Option GMD. </span>  
-				 			</span>
-				 			<span property="ls:etablissement">Polytech Nice-sophia Antipolis</span>
-				 		</h3>
-
-				 		<p>
-				 		<span property="ls:date-starts" datatype="xsd:date" content="2013-09-10">Septembre 2013 </span>
-				 		-
-				 		<span property="ls:date-ends" datatype="xsd:date" content="2015-09-10">Juin 2015 </span>
-				 		</p>
-				 		<p property="ls:description"> BAC +5 - Equivalent M2 </p>
-
-				 	</div>
-
-				 	<div typeof="ls:Formation">
-				 		<h3> 
-				 			<span property="ls:title" datatype>
-				 				<a rel="polytechWebFormation" href="formation.html"><span property="ls:level">Cycle préparatoire intégré : </span> </a>
-				 			</span>
-				 			<span property="ls:etablissement">Polytech Nice-sophia Antipolis</span>
-				 		</h3>
-
-				 		<p>
-				 		<span property="ls:date-starts" datatype="xsd:date" content="2010-09-10">Septembre 2010 </span>
-				 		-
-				 		<span property="ls:date-ends" datatype="xsd:date" content="2012-09-10">Juin 2012 </span>
-				 		</p>
-				 		<p property="ls:description"> Programme général : informatique, mathématique et science sociale </p>
-				 	</div>
-		 	
-		 	</div>
-		 
-		 	<h2>Expériences</h2>
-		 		<div id="exp" rel="ls:experience" >
-		 			<div typeof="ls:Experience">
-		 				<h3> 
-				 			<span property="ls:position">Stage technicien</span> 
-				 			</span>
-				 			.
-				 			<span property="ls:location" datype>
-				 				<span property="ls:ville">Madrid </span>
-				 				,
-				 				<span property="ls:pays">Espagne</span>
-				 			</span>
-				 		</h3>
-
-				 		<p>
-				 		<span property="ls:date-starts" datatype="xsd:date" content="2014-06-25">Juin 2014 </span>
-				 		-
-				 		<span property="ls:date-ends" datatype="xsd:date" content="2014-09-10">Septembre 2015 </span>
-				 		</p>
-				 		<p property="ls:description"> Stage dans une start-up espagnole sur la recherche d'image dans une base de donnée </p>
-		 			</div>
-
-		 			<div typeof="ls:Experience">
-		 				<h3> 
-				 			<span property="ls:position">Cours à domicile</span> 
-				 			</span>
-				 			.
-				 			<span property="ls:location" datype>
-				 				<span property="ls:ville">Antibes</span>
-				 				,
-				 				<span property="ls:pays">France</span>
-				 			</span>
-				 		</h3>
-
-				 		<p>
-				 		<span property="ls:date-starts" datatype="xsd:date" content="2010-09-10">Septembre 2010 </span>
-				 		-
-				 		<span property="ls:date-ends" datatype="xsd:date" content="2014-09-10">Septembre 2014 </span>
-				 		</p>
-				 		<p property="ls:description"> Cours de soutient à domicile pour des lycées et collégiens en difficulté</p>
-		 			</div>
-		 		</div>
-
-		 
-		 	<h2>Compétences</h2>
-		 		<div id="competence" rel="ls:competence" >
-		 			<div typeof="ls:Competence">
-
-		 					<h3> 
-				 			<span property="ls:title" datatype>Système d'exploitation:
-				 				<span property="ls:content">Ubuntu</span> 
-				 				,
-				 				<span property="ls:content">Windows</span>
-				 			</span>
-				 			
-				 		</h3>
-		 			</div>
-
-		 			<div typeof="ls:Competence">
-
-		 					<h3> 
-				 			<span property="ls:title" datatype>Langues:
-				 				<span property="ls:content">Anglais</span> 
-				 				,
-				 				<span property="ls:content">Espagnol</span>
-				 			</span>
-				 			
-				 		</h3>
-		 			</div>
-
-		 			<div typeof="ls:Competence">
-
-		 					<h3> 
-				 			<span property="ls:title" datatype>Programmation Web:
-				 				<span property="ls:content">CSS</span> 
-				 				,
-				 				<span property="ls:content">HTML5</span>
-				 				,
-				 				<span property="ls:content">Javascript</span>
-				 			</span>
-				 			
-				 		</h3>
-		 			</div>
-
-		 			<div typeof="ls:Competence">
-
-		 					<h3> 
-				 			<span property="ls:title" datatype>Programmation dev:
-				 				<span property="ls:content">Java</span> 
-				 				,
-				 				<span property="ls:content">C++</span>
-				 				,
-				 				<span property="ls:content">Matlab</span>
-				 			</span>
-				 			
-				 		</h3>
-		 			</div>
-		 		</div>
-
-	</div>
+<script type="text/javascript">
+$(function() {
+ 
+    var menu_ul = $('.menu > li > ul'),
+        menu_a  = $('.menu > li > a');
+     
+    menu_ul.hide();
+ 
+    menu_a.click(function(e) {
+        e.preventDefault();
+        if(!$(this).hasClass('active')) {
+            menu_a.removeClass('active');
+            menu_ul.filter(':visible').slideUp('normal');
+            $(this).addClass('active').next().stop(true,true).slideDown('normal');
+        } else {
+            $(this).removeClass('active');
+            $(this).next().stop(true,true).slideUp('normal');
+        }
+    });
+ 
+});
+</script>
 </body>
-
 </html>

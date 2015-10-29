@@ -1,0 +1,579 @@
+{
+  "@context": {
+    "base": "http://www.td1webdedonnees.fr/",
+    "dc": "http://TD.rdfs/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "#FormationContentCVJeanPhilippe",
+      "@type": "#ContentCV",
+      "dc:hasItem": [
+        {
+          "@id": "#Year3Year4engineerJeanPhilippe"
+        },
+        {
+          "@id": "#Year5engineerJeanPhilippe"
+        },
+        {
+          "@id": "#Prepa"
+        }
+      ]
+    },
+    {
+      "@id": "#Rugby",
+      "@type": "Sport",
+      "dc:called": "Rugby"
+    },
+    {
+      "@id": "#SkillsCVJeanPhilippe",
+      "@type": "#PartCV",
+      "dc:called": "Skills\n               ",
+      "dc:contains": {
+        "@id": "#SkillsContentCVJeanPhilippe"
+      }
+    },
+    {
+      "@id": "#FormationCVJeanPhilippe",
+      "@type": "#PartCV",
+      "dc:called": "Formation\n               ",
+      "dc:contains": {
+        "@id": "#FormationContentCVJeanPhilippe"
+      }
+    },
+    {
+      "@id": "#Year4engineerRemi",
+      "@type": "Formation",
+      "dc:called": "Erasmus year",
+      "dc:date-ends": {
+        "@type": "xsd:date",
+        "@value": "\n              \t 2015-06-15\n            \t"
+      },
+      "dc:date-start": {
+        "@type": "xsd:date",
+        "@value": "\n               2014-09-15\n            \t"
+      },
+      "dc:hasBuilding": {
+        "@id": "#UniversidadPolitecnicaDeMadrid"
+      },
+      "dc:hasFiliere": {
+        "@id": "#SI"
+      }
+    },
+    {
+      "@id": "#ExperienceCVJeanPhilippe",
+      "@type": "#PartCV",
+      "dc:called": "Experience\n               ",
+      "dc:contains": {
+        "@id": "#ExperienceContentCVJeanPhilippe"
+      }
+    },
+    {
+      "@id": "#Year3Year4engineerJeanPhilippe",
+      "@type": "Formation",
+      "dc:date-ends": {
+        "@type": "xsd:date",
+        "@value": "\n               2014-06-24\n            "
+      },
+      "dc:date-start": {
+        "@type": "xsd:date",
+        "@value": "\n               2012-06-23\n            "
+      },
+      "dc:hasFiliere": {
+        "@id": "#SI"
+      }
+    },
+    {
+      "@id": "_:Nfdb14108624d4562867e632605b52ac5",
+      "dc:CP": 6560,
+      "dc:City": {
+        "@id": "#Valbonne"
+      },
+      "dc:numero": 160,
+      "dc:rue": "\n         rue Albert Einstein\n      "
+    },
+    {
+      "@id": "#ExperienceContentCVRemi",
+      "@type": "ContentCV",
+      "dc:hasItem": [
+        {
+          "@id": "#SoftwareProjectRemi"
+        },
+        {
+          "@id": "#Stage"
+        }
+      ]
+    },
+    {
+      "@id": "#SaintRaphael",
+      "@type": "City",
+      "dc:Country": {
+        "@id": "#France"
+      },
+      "dc:called": "\n\t\t\t\t\t\t\tSaint Raphael\n\t\t\t\t\t\t",
+      "dc:hasCountry": {
+        "@id": "#France"
+      }
+    },
+    {
+      "@id": "#FormationCVRemi",
+      "@type": "PartCV",
+      "dc:called": "Formation\n\t\t\t\t",
+      "dc:contains": {
+        "@id": "#FormationContentCVRemi"
+      }
+    },
+    {
+      "@id": "#CVJeanPhilippe",
+      "@type": "#CV",
+      "dc:onePart": [
+        {
+          "@id": "#FormationCVJeanPhilippe"
+        },
+        {
+          "@id": "#HobbiesJeanPhilippe"
+        },
+        {
+          "@id": "#ContactCVJeanPhilippe"
+        },
+        {
+          "@id": "#SkillsCVJeanPhilippe"
+        },
+        {
+          "@id": "#ExperienceCVJeanPhilippe"
+        }
+      ]
+    },
+    {
+      "@id": "#Handball",
+      "@type": "Sport",
+      "dc:called": "Handball"
+    },
+    {
+      "@id": "#ContactCVJeanPhilippe",
+      "@type": "#PartCV",
+      "dc:called": "Contact\n               ",
+      "dc:contains": {
+        "@id": "#ContactContentCVJeanPhilippe"
+      }
+    },
+    {
+      "@id": "#FormationContentCVRemi",
+      "@type": "ContentCV",
+      "dc:hasItem": [
+        {
+          "@id": "#Year3engineerRemi"
+        },
+        {
+          "@id": "#Year5engineerRemi"
+        },
+        {
+          "@id": "#Prepa"
+        },
+        {
+          "@id": "#Year4engineerRemi"
+        }
+      ]
+    },
+    {
+      "@id": "#Paris",
+      "@type": "City",
+      "dc:hasCountry": {
+        "@id": "#France"
+      }
+    },
+    {
+      "@id": "#Prepa",
+      "@type": "Formation",
+      "dc:date-ends": "2012-06-20",
+      "dc:date-starts": "2010-09-01",
+      "dc:hasBuilding": [
+        {
+          "@id": "#PolytechAnnecy"
+        },
+        {
+          "@id": "#PolytechOrlean"
+        }
+      ]
+    },
+    {
+      "@id": "#Year5engineerJeanPhilippe",
+      "@type": "Formation",
+      "dc:Building": {
+        "@id": "Polytech"
+      },
+      "dc:called": "Cycle Ingénieur",
+      "dc:date-ends": {
+        "@type": "xsd:date",
+        "@value": "\n               2015-06-24\n            "
+      },
+      "dc:date-start": {
+        "@type": "xsd:date",
+        "@value": "\n               2014-06-23\n            "
+      },
+      "dc:hasFiliere": {
+        "@id": "#SI"
+      },
+      "dc:hasSpeciality": {
+        "@id": "#WEB"
+      }
+    },
+    {
+      "@id": "#HobbiesContentJeanPhilippe",
+      "@type": "ContentCV",
+      "dc:hasHobbies": [
+        {
+          "@id": "#Rugby"
+        },
+        {
+          "@id": "#Judo"
+        }
+      ]
+    },
+    {
+      "@id": "#Year5engineerRemi",
+      "@type": "Formation",
+      "dc:called": "Cycle Ingénieur",
+      "dc:date-ends": {
+        "@type": "xsd:date",
+        "@value": "2016-09-30"
+      },
+      "dc:date-starts": {
+        "@type": "xsd:date",
+        "@value": "2015-09-21"
+      },
+      "dc:hasBuilding": {
+        "@id": "#Polytech"
+      },
+      "dc:hasFilliere": {
+        "@id": "#SI"
+      }
+    },
+    {
+      "@id": "#SkillsContentCVJeanPhilippe",
+      "@type": "#ContentCV",
+      "dc:ProgrammationDev": [
+        {
+          "@id": "#C++"
+        },
+        {
+          "@id": "#Java"
+        },
+        {
+          "@id": "#Android"
+        }
+      ],
+      "dc:ProgrammationWeb": [
+        {
+          "@id": "#PHP"
+        },
+        {
+          "@id": "#Html"
+        },
+        {
+          "@id": "#JavaScript"
+        }
+      ],
+      "dc:hasLanguage": [
+        {
+          "@id": "#Anglais"
+        },
+        {
+          "@id": "#Chinois"
+        },
+        {
+          "@id": "#Francais"
+        },
+        {
+          "@id": "#Polonais"
+        }
+      ],
+      "dc:hasOS": [
+        {
+          "@id": "#windows"
+        },
+        {
+          "@id": "#projectManagement"
+        }
+      ]
+    },
+    {
+      "@id": "#HobbiesRemi",
+      "@type": "PartCV",
+      "dc:called": "Hobbies\n               ",
+      "dc:contains": {
+        "@id": "#HobbiesContentRemi"
+      }
+    },
+    {
+      "@id": "#HobbiesJeanPhilippe",
+      "@type": "#PartCV",
+      "dc:called": "Hobbies\n               ",
+      "dc:contains": {
+        "@id": "#HobbiesContentJeanPhilippe"
+      }
+    },
+    {
+      "@id": "#Stage",
+      "@type": "Experience",
+      "dc:date-ends": "\n               2014-09-08\n            ",
+      "dc:date-start": "\n               2015-09-15\n            ",
+      "dc:place": {
+        "@id": "#Sorexto"
+      }
+    },
+    {
+      "@id": "#Judo",
+      "@type": "Sport",
+      "dc:called": "Judo"
+    },
+    {
+      "@id": "#SkillsContentCVRemi",
+      "@type": "ContentCV",
+      "dc:ProgrammationDev": [
+        {
+          "@id": "#Android"
+        },
+        {
+          "@id": "#Java"
+        },
+        {
+          "@id": "#Python"
+        }
+      ],
+      "dc:ProgrammationWeb": [
+        {
+          "@id": "#Bootstrap"
+        },
+        {
+          "@id": "#JavaScript"
+        },
+        {
+          "@id": "#React"
+        }
+      ],
+      "dc:hasLanguage": [
+        {
+          "@id": "#Espagnol"
+        },
+        {
+          "@id": "#Anglais"
+        },
+        {
+          "@id": "#Chinois"
+        },
+        {
+          "@id": "#Francais"
+        }
+      ],
+      "dc:hasOS": [
+        {
+          "@id": "#windows"
+        },
+        {
+          "@id": "#projectManagement"
+        }
+      ]
+    },
+    {
+      "@id": "#HobbiesContentRemi",
+      "@type": "ContentCV",
+      "dc:hasHobbies": [
+        {
+          "@id": "#Handball"
+        },
+        {
+          "@id": "#Velo"
+        }
+      ]
+    },
+    {
+      "@id": "#France",
+      "@type": "Country",
+      "dc:called": [
+        "France\n               ",
+        "\n\t\t\t\t\t\t\t\t\tFrance\n\t\t\t\t\t\t\t\t"
+      ]
+    },
+    {
+      "@id": "#SoftwareProjectRemi",
+      "@type": "Experience",
+      "dc:date-ends": "\n               2014-06-24\n            ",
+      "dc:date-start": "\n               2010-06-23\n            ",
+      "dc:place": {
+        "@id": "#SaintRaphael"
+      }
+    },
+    {
+      "@id": "#CVRemi",
+      "@type": "CV",
+      "dc:onePart": [
+        {
+          "@id": "#ExperienceCVRemi"
+        },
+        {
+          "@id": "#FormationCVRemi"
+        },
+        {
+          "@id": "#ContactCVRemi"
+        },
+        {
+          "@id": "#SkillsCVRemi"
+        },
+        {
+          "@id": "#HobbiesRemi"
+        }
+      ]
+    },
+    {
+      "@id": "#ContactContentCVJeanPhilippe",
+      "@type": "#ContentCV",
+      "foaf:Name": "Contact\n      ",
+      "foaf:adress": {
+        "@id": "_:Nfdb14108624d4562867e632605b52ac5"
+      },
+      "foaf:age": {
+        "@id": "_:Naa95e030bd08453b85c6f9787f7d2e27"
+      },
+      "foaf:birthday": "1992-03-05",
+      "foaf:family_name": "KHA",
+      "foaf:gender": "Man",
+      "foaf:givenName": "Jean-Philippe",
+      "foaf:mbox": {
+        "@id": "jeanphilippekha@gmail.com"
+      },
+      "foaf:phone": 600000000
+    },
+    {
+      "@id": "#ExperienceContentCVJeanPhilippe",
+      "@type": "#ContentCV",
+      "dc:hasItem": {
+        "@id": "#SoftwareProjectJeanPhilippe"
+      }
+    },
+    {
+      "@id": "#RemiPourtier",
+      "@type": "foaf:Person",
+      "dc:hasCV": {
+        "@id": "#CVRemi"
+      }
+    },
+    {
+      "@id": "#SoftwareProjectJeanPhilippe",
+      "@type": "Experience",
+      "dc:date-ends": "\n               2012-06-24\n            ",
+      "dc:date-start": "\n               2010-06-23\n            ",
+      "dc:place": {
+        "@id": "#Paris"
+      }
+    },
+    {
+      "@id": "_:Naa95e030bd08453b85c6f9787f7d2e27",
+      "dc:unit": {
+        "@id": "#year"
+      },
+      "rdf:value": 22
+    },
+    {
+      "@id": "#JeanPhilippe",
+      "@type": "foaf:Person",
+      "dc:hasCV": {
+        "@id": "#CVJeanPhilippe"
+      }
+    },
+    {
+      "@id": "#ContactContentCVRemi",
+      "@type": "ContentCV",
+      "foaf:adress": {
+        "@id": "_:Ne352fb203ab541648bc4ff13129c082d"
+      },
+      "foaf:age": {
+        "@id": "_:Naa95e030bd08453b85c6f9787f7d2e27"
+      },
+      "foaf:birthday": "1993-08-11",
+      "foaf:family_name": "POURTIER",
+      "foaf:gender": "Man",
+      "foaf:givenName": "Remi",
+      "foaf:mbox": {
+        "@id": "remi.pourtier@gmail.com"
+      },
+      "foaf:name": "Contact",
+      "foaf:phone": 33650473273
+    },
+    {
+      "@id": "#ContactCVRemi",
+      "@type": "PartCV",
+      "dc:called": "Contact\n\t\t\t",
+      "dc:contains": {
+        "@id": "#ContactContentCVRemi"
+      }
+    },
+    {
+      "@id": "#SI",
+      "dc:called": "\n\t\t\t\t\t\t\t\tSciences Informatiques\n\t\t\t\t\t\t\t",
+      "dc:option": {
+        "@id": "#IHM"
+      }
+    },
+    {
+      "@id": "#Valbonne",
+      "@type": "City",
+      "dc:called": "Valbonne\n         ",
+      "dc:hasCountry": {
+        "@id": "#France"
+      }
+    },
+    {
+      "@id": "#Velo",
+      "@type": "Sport",
+      "dc:called": "Velo"
+    },
+    {
+      "@id": "#Year3engineerRemi",
+      "@type": "Formation",
+      "dc:called": "First year engineering school",
+      "dc:date-ends": {
+        "@type": "xsd:date",
+        "@value": "\n              \t 2014-06-15\n            \t"
+      },
+      "dc:date-start": {
+        "@type": "xsd:date",
+        "@value": "\n\t\t\t\t2012-09-01\n            \t"
+      },
+      "dc:hasBuilding": {
+        "@id": "#Polytech"
+      },
+      "dc:hasFiliere": {
+        "@id": "#SI"
+      }
+    },
+    {
+      "@id": "#SkillsCVRemi",
+      "@type": "PartCV",
+      "dc:called": "Skills\n\t\t\t\t",
+      "dc:contains": {
+        "@id": "#SkillsContentCVRemi"
+      }
+    },
+    {
+      "@id": "_:Ne352fb203ab541648bc4ff13129c082d",
+      "dc:CP": 83700,
+      "dc:City": {
+        "@id": "#SaintRaphael"
+      },
+      "dc:numero": 68,
+      "dc:rue": " \n\t\t\t\t\tallee des Asphodeles\n\t\t\t\t"
+    },
+    {
+      "@id": "#ExperienceCVRemi",
+      "@type": "PartCV",
+      "dc:called": "Experience\n               ",
+      "dc:contains": {
+        "@id": "#ExperienceContentCVRemi"
+      }
+    }
+  ]
+}
