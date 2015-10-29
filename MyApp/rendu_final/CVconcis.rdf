@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rdf:RDF [
+   <!ENTITY xsd      "http://www.w3.org/2001/XMLSchema#"> ]>
+
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:dc="http://TD.rdfs/"
+	xmlns:xsd ="&xsd;"
+	xmlns:base="http://www.td1webdedonnees.fr/">
+
+
+<foaf:Person rdf:ID="RemiPourtier">
+	<dc:hasCV rdf:resource="#CVRemi"/>
+ </foaf:Person>
+ 
+<foaf:CV rdf:ID="CVRemi">
+	<dc:onePart rdf:resource ="#FormationCVRemi"/>
+	<dc:onePart rdf:resource ="#ExperienceCVRemi"/>
+	<dc:onePart rdf:resource ="#SkillsCVRemi"/>
+	<dc:onePart rdf:resource ="#ContactCVRemi"/>
+	<dc:onePart rdf:resource ="#HobbiesCVRemi"/>
+</foaf:CV>		
+
+
+<foaf:PartCV rdf:ID="FormationCVRemi">
+		<dc:called rdf:datatype="&xsd;string">Formation</dc:called>
+		<dc:contains rdf:resource="#FormationContentCVRemi"/>
+</foaf:PartCV>	
+
+<foaf:PartCV rdf:ID="ExperienceCVRemi">
+		<dc:called rdf:datatype="&xsd;string">Experience</dc:called>
+		<dc:contains rdf:resource="#ExperienceContentCVRemi"/>	
+</foaf:PartCV>	
+
+<foaf:PartCV rdf:ID="SkillsCVRemi">
+		<dc:called rdf:datatype="&xsd;string">Skills</dc:called>
+		<dc:contains rdf:resource="#SkillsContentCVRemi"/>
+</foaf:PartCV>	
+
+<foaf:PartCV rdf:ID="ContactCVRemi">
+		<dc:called rdf:datatype="&xsd;string">Contact</dc:called>
+		<dc:contains rdf:resource="#ContactContentCVRemi"/>
+</foaf:PartCV>		
+
+<foaf:PartCV rdf:ID="HobbiesCVRemi">
+		<dc:called rdf:datatype="&xsd;string">Hobbies</dc:called>
+		<dc:contains rdf:resource="#HobbiesContentCVRemi"/>
+</foaf:PartCV>	
+
+
+##############################################################################################################################################
+En dessous, partie non traduite       
+##############################################################################################################################################	
+		
+	
+      <rdf:Description rdf:about="#ContactContentCVRemi">
+         <rdf:type rdf:resource="ContentCV"/>
+			<foaf:name rdf:datatype="&xsd;string" >Contact</foaf:name>
+		
+
+			<foaf:givenName>Remi</foaf:givenName>
+			<foaf:family_name>POURTIER</foaf:family_name>
+			<foaf:birthday>1993-08-11</foaf:birthday>
+			<foaf:mbox rdf:resource="remi.pourtier@gmail.com"/>
+			<foaf:age rdf:nodeID="age" />
+			<foaf:adress rdf:nodeID="addrRemi" />
+			<foaf:gender rdf:datatype="&xsd;string">Man</foaf:gender>
+			<foaf:phone rdf:datatype="&xsd;integer" >33650473273</foaf:phone>
+	  </rdf:Description>
+
+	
+	<rdf:Description rdf:about="#FormationContentCVRemi">
+	   <rdf:type rdf:resource="ContentCV"/>
+		<dc:hasItem>
+			<rdf:Description rdf:about="#Year5engineerRemi">
+			   <rdf:type rdf:resource="Formation"/>
+				<dc:called  rdf:datatype="&xsd;string" >Cycle Ingénieur</dc:called>
+					<dc:hasBuilding>
+						<rdf:Description rdf:about="#Polytech"/>
+					</dc:hasBuilding>
+					<dc:date-starts rdf:datatype="&xsd;date" >2015-09-21</dc:date-starts>
+					<dc:date-ends rdf:datatype="&xsd;date" >2016-09-30</dc:date-ends>
+					<dc:hasFilliere>
+						<rdf:Description rdf:about="#SI">
+							<dc:called  rdf:datatype="&xsd;string" >
+								Sciences Informatiques
+							</dc:called>
+							<dc:option>
+								<rdf:Description rdf:about="#IHM"/>
+							</dc:option>
+						</rdf:Description>
+					</dc:hasFilliere>
+			</rdf:Description>
+		</dc:hasItem>
+
+		 <dc:hasItem>
+         	<rdf:Description rdf:about="#Year4engineerRemi">
+         	   <rdf:type rdf:resource="Formation"/>
+            	<dc:called  rdf:datatype="&xsd;string" >Erasmus year</dc:called>
+					<dc:hasBuilding>
+						<rdf:Description rdf:about="#UniversidadPolitecnicaDeMadrid" />
+					</dc:hasBuilding>
+            	<dc:date-start rdf:datatype="&xsd;date">
+               2014-09-15
+            	</dc:date-start>
+            	<dc:date-ends rdf:datatype="&xsd;date">
+              	 2015-06-15
+            	</dc:date-ends>
+            	<dc:hasFiliere>
+               		<rdf:Description rdf:about="#SI"/>
+             	</dc:hasFiliere>
+         	</rdf:Description>
+      </dc:hasItem>
+		 <dc:hasItem>
+         	<rdf:Description rdf:about="#Year3engineerRemi">
+         	   <rdf:type rdf:resource="Formation"/>
+            	<dc:called  rdf:datatype="&xsd;string" >First year engineering school</dc:called>
+					<dc:hasBuilding>
+						<rdf:Description rdf:about="#Polytech" />
+					</dc:hasBuilding>
+            	<dc:date-start rdf:datatype="&xsd;date">
+				2012-09-01
+            	</dc:date-start>
+            	<dc:date-ends rdf:datatype="&xsd;date">
+              	 2014-06-15
+            	</dc:date-ends>
+            	<dc:hasFiliere>
+               		<rdf:Description rdf:about="#SI"/>
+             	</dc:hasFiliere>
+         	</rdf:Description>
+      </dc:hasItem>
+		<dc:hasItem>
+			<rdf:Description rdf:about="#Prepa">
+			   <rdf:type rdf:resource="Formation"/>
+				<dc:hasBuilding>
+					<rdf:Description rdf:about="#PolytechAnnecy"/>
+				</dc:hasBuilding>
+				<dc:date-starts rdf:datatype="http://www.w3.org/2001/XMLSchema#string" >2010-09-01</dc:date-starts>
+				<dc:date-ends rdf:datatype="http://www.w3.org/2001/XMLSchema#string" >2012-06-20</dc:date-ends>
+			</rdf:Description>
+		</dc:hasItem>
+		
+	</rdf:Description>
+	
+	<rdf:Description rdf:about="#ExperienceContentCVRemi">
+	   <rdf:type rdf:resource="ContentCV"/>
+		<dc:hasItem>
+         <rdf:Description rdf:about="#Stage">
+            <rdf:type rdf:resource="Experience"/>
+            <dc:place>
+               <rdf:Description rdf:about="#Sorexto">
+               </rdf:Description>
+            </dc:place>
+            <dc:date-start rdf:datatype="&xsd;string">
+               2015-09-15
+            </dc:date-start>
+            <dc:date-ends rdf:datatype="&xsd;string">
+               2014-09-08
+            </dc:date-ends>
+         </rdf:Description>
+      </dc:hasItem>
+      
+      <dc:hasItem>
+         <rdf:Description rdf:about="#SoftwareProjectRemi">
+            <rdf:type rdf:resource="Experience"/>
+            <dc:place>
+               <rdf:Description rdf:about="#SaintRaphael">
+                  <rdf:type rdf:resource="City"/>
+                  <dc:hasCountry>
+                     <rdf:Description rdf:about="#France"/>
+                  </dc:hasCountry>
+               </rdf:Description>
+            </dc:place>
+            <dc:date-start rdf:datatype="&xsd;string">
+               2010-06-23
+            </dc:date-start>
+            <dc:date-ends rdf:datatype="&xsd;string">
+               2014-06-24
+            </dc:date-ends>
+         </rdf:Description>
+      </dc:hasItem>
+   </rdf:Description>
+
+		<rdf:Description rdf:nodeID="age">
+			<rdf:value rdf:datatype="&xsd;integer" >
+				 22
+			</rdf:value>
+			<dc:unit rdf:resource="#year" />
+		</rdf:Description>
+
+
+			<rdf:Description rdf:nodeID="addrRemi">
+				<dc:numero rdf:datatype="&xsd;integer" > 
+					68
+				</dc:numero>
+				<dc:rue rdf:datatype="&xsd;string" > 
+					allee des Asphodeles
+				</dc:rue>
+				<dc:CP rdf:datatype="&xsd;integer" > 
+					83700
+				</dc:CP>
+				<dc:City>
+					<rdf:Description rdf:about="#SaintRaphael">
+					   <rdf:type rdf:resource="City"/>
+						<dc:called rdf:datatype="&xsd;string" >
+							Saint Raphael
+						</dc:called>
+						
+						<dc:Country>
+							<rdf:Description rdf:about="#France">
+							   <rdf:type rdf:resource="Country"/>
+								<dc:called rdf:datatype="&xsd;string">
+									France
+								</dc:called>
+							</rdf:Description>
+						</dc:Country>
+					</rdf:Description>
+				</dc:City>
+		</rdf:Description>
+		
+
+   <rdf:Description rdf:about="#HobbiesContentRemi">
+      <rdf:type rdf:resource="ContentCV"/>
+      <dc:hasHobbies>
+         <rdf:Description rdf:about="#Velo">
+            <rdf:type rdf:resource="Sport"/>
+               <dc:called rdf:datatype="&xsd;string" >Velo</dc:called>
+         </rdf:Description>
+      </dc:hasHobbies>   
+	   <dc:hasHobbies>
+         <rdf:Description rdf:about="#Handball">
+            <rdf:type rdf:resource="Sport"/>
+               <dc:called rdf:datatype="&xsd;string" >Handball</dc:called>
+         </rdf:Description>
+      </dc:hasHobbies>  
+   </rdf:Description>
+   
+     <rdf:Description rdf:about="#SkillsContentCVRemi">
+      <rdf:type rdf:resource="ContentCV"/>
+	  <dc:hasOS>
+         <rdf:Description rdf:about="#projectManagement" />
+      </dc:hasOS>
+      <dc:hasOS>
+         <rdf:Description rdf:about="#windows" />
+      </dc:hasOS>  
+      	  <dc:hasLanguage>
+            <rdf:Description rdf:about="#Francais" />
+      </dc:hasLanguage> 
+      <dc:hasLanguage>
+            <rdf:Description rdf:about="#Anglais" />
+      </dc:hasLanguage>
+      <dc:hasLanguage>
+            <rdf:Description rdf:about="#Espagnol" />
+      </dc:hasLanguage>
+        <dc:hasLanguage>
+            <rdf:Description rdf:about="#Chinois" />
+      </dc:hasLanguage>
+
+      <dc:ProgrammationWeb>
+               <rdf:Description rdf:about="#React" />
+      </dc:ProgrammationWeb>
+      <dc:ProgrammationWeb>
+               <rdf:Description rdf:about="#Bootstrap" />
+      </dc:ProgrammationWeb>
+      <dc:ProgrammationWeb>
+               <rdf:Description rdf:about="#JavaScript" />
+      </dc:ProgrammationWeb>
+         
+         
+      <dc:ProgrammationDev>
+               <rdf:Description rdf:about="#Java" />
+      </dc:ProgrammationDev>
+      <dc:ProgrammationDev>
+               <rdf:Description rdf:about="#Python" />
+      </dc:ProgrammationDev>
+      <dc:ProgrammationDev>
+               <rdf:Description rdf:about="#Android" />
+      </dc:ProgrammationDev>
+      
+      
+   
+   </rdf:Description>
+   
+		
+	<foaf:Person rdf:about="#JeanPhilippe">
+      <dc:hasCV>
+         <rdf:Description rdf:about="#CVJeanPhilippe"/>
+      </dc:hasCV>
+   </foaf:Person>
+   
+   
+   <rdf:Description rdf:about="#CVJeanPhilippe">
+      <rdf:type rdf:resource="#CV"/>
+      <dc:onePart>
+         <rdf:Description rdf:about="#ContactCVJeanPhilippe">
+            <rdf:type rdf:resource="#PartCV"/>
+               <dc:called rdf:datatype="&xsd;string">Contact
+               </dc:called>
+               <dc:contains>
+                  <rdf:Description rdf:about="#ContactContentCVJeanPhilippe"/>
+               </dc:contains>
+            </rdf:Description>
+      </dc:onePart>
+      
+      <dc:onePart>
+         <rdf:Description rdf:about="#FormationCVJeanPhilippe">
+            <rdf:type rdf:resource="#PartCV"/>
+               <dc:called rdf:datatype="&xsd;string">Formation
+               </dc:called>
+               <dc:contains>
+                  <rdf:Description rdf:about="#FormationContentCVJeanPhilippe"/>
+               </dc:contains>
+            </rdf:Description>
+      </dc:onePart>
+      
+      <dc:onePart>
+         <rdf:Description rdf:about="#ExperienceCVJeanPhilippe">
+            <rdf:type rdf:resource="#PartCV"/>
+               <dc:called rdf:datatype="&xsd;string">Experience
+               </dc:called>
+               <dc:contains>
+                  <rdf:Description rdf:about="#ExperienceContentCVJeanPhilippe"/>
+               </dc:contains>
+            </rdf:Description>
+      </dc:onePart>
+
+      <dc:onePart>
+          <rdf:Description rdf:about="#SkillsCVJeanPhilippe">
+            <rdf:type rdf:resource="#PartCV"/>
+               <dc:called rdf:datatype="&xsd;string">Skills
+               </dc:called>
+               <dc:contains>
+                 <rdf:Description rdf:about="#SkillsContentCVJeanPhilippe"/>
+               </dc:contains>
+            </rdf:Description>
+      
+     </dc:onePart>
+	 <dc:onePart>
+          <rdf:Description rdf:about="#HobbiesJeanPhilippe">
+            <rdf:type rdf:resource="#PartCV"/>
+               <dc:called rdf:datatype="&xsd;string">Hobbies
+               </dc:called>
+               <dc:contains>
+                 <rdf:Description rdf:about="#HobbiesContentJeanPhilippe"/>
+               </dc:contains>
+            </rdf:Description>
+      
+     </dc:onePart>
+	 	
+   </rdf:Description>
+   
+   
+   
+   <rdf:Description rdf:about="#ContactContentCVJeanPhilippe">
+      <rdf:type rdf:resource="#ContentCV"/>
+      <foaf:Name rdf:datatype="&xsd;string">Contact
+      </foaf:Name> 
+      <foaf:givenName>Jean-Philippe</foaf:givenName>
+			<foaf:family_name>KHA</foaf:family_name>
+			<foaf:birthday>1992-03-05</foaf:birthday>
+      <foaf:age rdf:nodeID="age"/>
+      <foaf:adress rdf:nodeID="addrJeanPhilippe"/>
+      <foaf:mbox rdf:resource="jeanphilippekha@gmail.com"/>
+      <foaf:phone rdf:datatype="&xsd;integer">
+         0600000000
+      </foaf:phone>
+      <foaf:gender rdf:datatype="&xsd;string">Man</foaf:gender>
+   </rdf:Description>
+   
+   <rdf:Description rdf:about="#FormationContentCVJeanPhilippe">
+      <rdf:type rdf:resource="#ContentCV"/>
+      <dc:hasItem>
+         <rdf:Description rdf:about="#Year5engineerJeanPhilippe">
+            <rdf:type rdf:resource="Formation"/>
+            <dc:Building>
+                  <rdf:Description rdf:about="Polytech"/>
+               </dc:Building>
+            <dc:called  rdf:datatype="&xsd;string" >Cycle Ingénieur</dc:called>
+            <dc:date-start rdf:datatype="&xsd;date">
+               2014-06-23
+            </dc:date-start>
+            <dc:date-ends rdf:datatype="&xsd;date">
+               2015-06-24
+            </dc:date-ends>
+            <dc:hasFiliere>
+               <rdf:Description rdf:about="#SI"/>
+             </dc:hasFiliere>
+            <dc:hasSpeciality>
+               <rdf:Description rdf:about="#WEB"/>
+            </dc:hasSpeciality>
+         </rdf:Description>
+      </dc:hasItem>
+      
+      <dc:hasItem>
+         <rdf:Description rdf:about="#Year3Year4engineerJeanPhilippe">
+            <rdf:type rdf:resource="Formation"/>
+            <dc:date-start rdf:datatype="&xsd;date">
+               2012-06-23
+            </dc:date-start>
+            <dc:date-ends rdf:datatype="&xsd;date">
+               2014-06-24
+            </dc:date-ends>
+            <dc:hasFiliere>
+               <rdf:Description rdf:about="#SI"/>
+             </dc:hasFiliere>
+         </rdf:Description>
+      </dc:hasItem>
+      
+      <dc:hasItem>
+			<rdf:Description rdf:about="#Prepa">
+			   <rdf:type rdf:resource="Formation"/>
+				<dc:hasBuilding>
+					<rdf:Description rdf:about="#PolytechOrlean"/>
+				</dc:hasBuilding>
+				<dc:date-starts rdf:datatype="http://www.w3.org/2001/XMLSchema#string" >2010-09-01</dc:date-starts>
+				<dc:date-ends rdf:datatype="http://www.w3.org/2001/XMLSchema#string" >2012-06-20</dc:date-ends>
+			</rdf:Description>
+		</dc:hasItem>
+   </rdf:Description>
+   
+   <rdf:Description rdf:about="#ExperienceContentCVJeanPhilippe">
+      <rdf:type rdf:resource="#ContentCV"/>
+      <dc:hasItem>
+         <rdf:Description rdf:about="#SoftwareProjectJeanPhilippe">
+            <rdf:type rdf:resource="Experience"/>
+            <dc:place>
+               <rdf:Description rdf:about="#Paris">
+                  <rdf:type rdf:resource="City"/>
+                  <dc:hasCountry>
+                     <rdf:Description rdf:about="#France">
+                        <rdf:type rdf:resource="Country"/>
+                     </rdf:Description>
+                  </dc:hasCountry>
+               </rdf:Description>
+            </dc:place>
+            <dc:date-start rdf:datatype="&xsd;string">
+               2010-06-23
+            </dc:date-start>
+            <dc:date-ends rdf:datatype="&xsd;string">
+               2012-06-24
+            </dc:date-ends>
+         </rdf:Description>
+      </dc:hasItem>
+   </rdf:Description>
+
+      <rdf:Description rdf:about="#HobbiesContentJeanPhilippe">
+      <rdf:type rdf:resource="ContentCV"/>
+      <dc:hasHobbies>
+         <rdf:Description rdf:about="#Judo">
+            <rdf:type rdf:resource="Sport"/>
+               <dc:called rdf:datatype="&xsd;string" >Judo</dc:called>
+         </rdf:Description>
+      </dc:hasHobbies>   
+	   <dc:hasHobbies>
+         <rdf:Description rdf:about="#Rugby">
+            <rdf:type rdf:resource="Sport"/>
+               <dc:called rdf:datatype="&xsd;string" >Rugby</dc:called>
+         </rdf:Description>
+      </dc:hasHobbies>  
+   </rdf:Description>
+   
+   <rdf:Description rdf:about="#SkillsContentCVJeanPhilippe">
+      <rdf:type rdf:resource="#ContentCV"/>
+      <dc:hasOS>
+         <rdf:Description rdf:about="#projectManagement" />
+      </dc:hasOS>
+      <dc:hasOS>
+         <rdf:Description rdf:about="#windows" />
+      </dc:hasOS>  
+      	  <dc:hasLanguage>
+            <rdf:Description rdf:about="#Francais" />
+      </dc:hasLanguage> 
+      <dc:hasLanguage>
+            <rdf:Description rdf:about="#Anglais" />
+      </dc:hasLanguage>
+      <dc:hasLanguage>
+            <rdf:Description rdf:about="#Polonais" />
+      </dc:hasLanguage>
+        <dc:hasLanguage>
+            <rdf:Description rdf:about="#Chinois" />
+      </dc:hasLanguage>
+
+      <dc:ProgrammationWeb>
+               <rdf:Description rdf:about="#Html" />
+      </dc:ProgrammationWeb>
+      <dc:ProgrammationWeb>
+               <rdf:Description rdf:about="#PHP" />
+      </dc:ProgrammationWeb>
+      <dc:ProgrammationWeb>
+               <rdf:Description rdf:about="#JavaScript" />
+      </dc:ProgrammationWeb>
+         
+         
+      <dc:ProgrammationDev>
+               <rdf:Description rdf:about="#Java" />
+      </dc:ProgrammationDev>
+      <dc:ProgrammationDev>
+               <rdf:Description rdf:about="#C++" />
+      </dc:ProgrammationDev>
+      <dc:ProgrammationDev>
+               <rdf:Description rdf:about="#Android" />
+      </dc:ProgrammationDev>
+      
+   
+   </rdf:Description>
+   
+   <rdf:Description rdf:nodeID="addrJeanPhilippe">
+      <dc:numero rdf:datatype="&xsd;integer">
+         160
+      </dc:numero>
+      <dc:rue rdf:datatype="&xsd;string">
+         rue Albert Einstein
+      </dc:rue>
+      <dc:CP rdf:datatype="&xsd;integer">
+         06560
+      </dc:CP>
+      <dc:City>
+         <rdf:Description rdf:about="#Valbonne">
+         <rdf:type rdf:resource="City"/>
+         <dc:called rdf:datatype="&xsd;string">Valbonne
+         </dc:called>
+         <dc:hasCountry>
+            <rdf:Description rdf:about="#France">
+               <dc:called rdf:datatype="&xsd;string">France
+               </dc:called>
+            </rdf:Description>
+         </dc:hasCountry>
+      </rdf:Description>
+      </dc:City>
+   </rdf:Description>
+</rdf:RDF>
