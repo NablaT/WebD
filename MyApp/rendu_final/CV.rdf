@@ -428,7 +428,7 @@
       </dc:hasItem>
       
       <dc:hasItem>
-			<rdf:Description rdf:about="#Prepa">
+			<rdf:Description rdf:about="#PrepaJeanPhilippe">
 			   <rdf:type rdf:resource="Formation"/>
 				<dc:hasBuilding>
 					<rdf:Description rdf:about="#PolytechOrlean"/>
