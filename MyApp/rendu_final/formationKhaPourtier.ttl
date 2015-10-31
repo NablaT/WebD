@@ -1,0 +1,79 @@
+@prefix formation: <http://www.td1webdedonnees.fr/>.
+
+<http://unice.fr/formation#JeanPhilippeKha>
+	a formation:Cours;
+	formation:aCommeCours <http://www.td1webdedonnees.fr/cours#AdaptationDesInterfaces>;
+	formation:aCommeCours <http://www.td1webdedonnees.fr/cours#ConceptionDApplicationMultimedia>;
+	formation:aCommeCours <http://www.td1webdedonnees.fr/cours#IngenierieDesConnaissances>;
+	formation:aCommeCours <http://www.td1webdedonnees.fr/cours#WebDesDonnees>;
+	formation:aCommeCours <http://www.td1webdedonnees.fr/cours#Management>;
+	formation:aCommeCours <http://www.td1webdedonnees.fr/cours#ProjetFinDEtude>;
+	formation:aCommeCours <http://www.td1webdedonnees.fr/cours#ConceptionEvaluationIHM>;
+	formation:aCommeCours <http://www.td1webdedonnees.fr/cours#TechniquesDInteractions>.
+	
+
+<http://unice.fr/formation#RemiPourtier>
+	a formation:Cours;
+	formation:aCommeCours <http://www.td1webdedonnees.fr/cours#AdaptationDesInterfaces>;
+	formation:aCommeCours <http://www.td1webdedonnees.fr/cours#alternanceAmadeus>;
+	formation:aCommeCours <http://www.td1webdedonnees.fr/cours#WebDesDonnees>;
+	formation:aCommeCours <http://www.td1webdedonnees.fr/cours#TechniquesDInteractions>;
+	formation:aCommeCours <http://www.td1webdedonnees.fr/cours#ConceptionEvaluationIHM>.
+   
+<http://www.td1webdedonnees.fr/cours#AdaptationDesInterfaces>
+    a formation:Matiere;
+    formation:name "AdaptationDesInterfaces";
+	formation:site "http://atelierihm.unice.fr/enseignements/plasticite-des-interfaces/presentation-et-planning/";
+	formation:responsable "Mme Dery" .
+<http://www.td1webdedonnees.fr/cours#ConceptionDApplicationMultimedia>
+    a formation:Matiere;
+    formation:name "Conception d'application multimedia";
+	formation:site"http://users.polytech.unice.fr/~strombon/camash/";
+	formation:responsable "M. Stromboni" .
+    
+<http://www.td1webdedonnees.fr/cours#WebSemantique>
+   a formation:Matiere;
+   formation:name "Web sémantique" ;
+   formation:responsable "Mme Faron" .
+	 
+    
+<http://www.td1webdedonnees.fr/cours#IngenierieDesConnaissances>
+	a formation:Matiere;
+    formation:name "Ingénierie des connaissances";
+    formation:responsable "Mme Faron" .
+	
+<http://www.td1webdedonnees.fr/cours#alternanceAmadeus>
+    a formation:Matiere;
+    formation:name "Amadeus";
+    formation:adresse "485 Route du Pin Montard, 06560 Sophia Antipolis" .
+         
+<http://www.td1webdedonnees.fr/cours#WebDesDonnees>
+    a formation:Matiere;
+    formation:name "Web des données";
+	formation:responsable "Mme Faron" .
+		
+		
+<http://www.td1webdedonnees.fr/cours#Management>
+    a formation:Matiere;
+    formation:name "Management" .
+		
+		
+<http://www.td1webdedonnees.fr/cours#ProjetFinDEtude>
+    a formation:Matiere;
+    formation:name "Projet de fin d'etude";
+	formation:responsable "Mr Molines" .
+
+<http://www.td1webdedonnees.fr/cours#TechniquesDInteractions>
+    a formation:Matiere;
+    formation:name "Techniques d'intéractions";
+	formation:responsable "Mr Renevier" .	
+
+	<http://www.td1webdedonnees.fr/cours#ConceptionEvaluationIHM>
+    a formation:Matiere;
+    formation:name "Conception et evaluation IHM";
+	formation:responsable "Mme Dery" .	
+		
+
+		
+    
+

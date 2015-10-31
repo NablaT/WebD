@@ -132,7 +132,7 @@
 	<dc:numero rdf:datatype="&xsd;integer" >68</dc:numero>
 	<dc:rue rdf:datatype="&xsd;string" >allee des Asphodeles</dc:rue>
 	<dc:CP rdf:datatype="&xsd;integer" >83700</dc:CP>
-	<dc:City rdf:resource="#Saint Raphael"/>
+	<dc:City rdf:resource="#SaintRaphael"/>
 	<dc:Country rdf:resource="#France"/>
 </rdf:Description>
 
